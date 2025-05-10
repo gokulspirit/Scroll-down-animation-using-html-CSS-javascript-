@@ -3,16 +3,7 @@ const moon = document.querySelector('.moon');
 const stars = document.getElementById('stars');
 const shootingStar = document.querySelector('.shooting-star');
 const music = document.getElementById('bgMusic');
-const mountains = document.querySelector('.mountains');
 
-if (scrollY > 100) {
-  // Night mode
-  mountains.style.background = 'linear-gradient(to top, #1a1a1a, #333)';
-  mountains.style.transition = 'background 1s ease';
-} else {
-  // Day mode
-  mountains.style.background = 'linear-gradient(to top, #3e3e3e, #5a5a5a)';
-}
 // Generate stars dynamically
 for (let i = 0; i < 100; i++) {
   const star = document.createElement('div');
