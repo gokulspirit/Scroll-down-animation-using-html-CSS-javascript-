@@ -144,8 +144,8 @@ body {
   left: -200px;
   width: 150px;
   height: auto;
-  opacity: 0;
   z-index: 6;
+  display: none; /* initially hidden */
   animation: shootStar 5s ease-in-out infinite;
 }
 @keyframes shootStar {
