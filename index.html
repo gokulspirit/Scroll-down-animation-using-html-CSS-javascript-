@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sunset to Moonset Scene</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <audio id="bgMusic" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="music-btn" onclick="toggleMusic()">Toggle Music</div>
+
+  <section class="scene">
+    <div class="sun"></div>
+    <div class="moon"></div>
+    <div class="stars" id="stars"></div>
+
+    <!-- Shooting Star Image -->
+    <img class="shooting-star" src="https://media.giphy.com/media/3oKIPwoeGErMmaI43C/giphy.gif" alt="Shooting Star" />
+
+    <!-- Bird Image -->
+    <img class="bird" src="https://i.postimg.cc/hvmJBmnt/output-onlinegiftools.gif" alt="Flying Bird" />
+
+    <div class="mountain back"></div>
+    <div class="mountain front"></div>
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <button class="scroll-btn" onclick="scrollDown()">Scroll</button>
+  </section>
+
+  <section class="content">
+    <h1>Magical Twilight</h1>
+    <p>Watch as the sun sets and stars fill the sky. Enjoy the peaceful transformation from day to night.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
