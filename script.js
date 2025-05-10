@@ -19,21 +19,25 @@ window.addEventListener('scroll', () => {
   const scene = document.querySelector('.scene');
 
   if (scrollY > 100) {
+    // Night mode
     scene.style.background = 'linear-gradient(to top, #0f2027, #203a43, #2c5364)';
     sun.style.top = '100%';
     sun.style.opacity = 0;
     moon.style.top = '20%';
     moon.style.opacity = 1;
+
     document.querySelectorAll('.star').forEach(star => star.style.opacity = 1);
-    shootingStar.style.opacity = 1;
+    shootingStar.style.display = 'block'; // Show shooting star in night mode
   } else {
+    // Day mode
     scene.style.background = 'linear-gradient(to top, #f3c07b, #fceabb)';
     sun.style.top = '20%';
     sun.style.opacity = 1;
     moon.style.top = '100%';
     moon.style.opacity = 0;
+
     document.querySelectorAll('.star').forEach(star => star.style.opacity = 0);
-    shootingStar.style.opacity = 0;
+    shootingStar.style.display = 'none'; // Hide shooting star in day mode
   }
 });
 
